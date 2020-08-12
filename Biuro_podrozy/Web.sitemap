@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+
+	<siteMapNode url="~/Strona_glowna.aspx" title="strona główna"  description="">
+		
+		<siteMapNode url="~/Logowanie/logowanie.aspx" title="logowanie"  description="">
+		<siteMapNode url="~/Logowanie/rejestracja_uzytkownika.aspx" title="rejestracja użytkownika"  description="" />
+		<siteMapNode url="~/Logowanie/przypomnienie_hasla.aspx" title="przypomnienie hasła"  description="" />
+		<siteMapNode url="~/Logowanie/zmiana_hasla.aspx" title="zmiana hasła"  description="" />
+		</siteMapNode>
+
+		<siteMapNode url="~/Przegladanie_danych1/przegladaj_wycieczka.aspx" title="przeglądaj wycieczka"  description="">
+		<siteMapNode url="~/Przegladanie_danych1/przegladaj_hotel.aspx" title="przegladaj hotel"  description="" />
+		<siteMapNode url="~/Przegladanie_danych1/przegladaj_atrakcja_dodatkowa.aspx" title="przeglądaj atrakcja dodatkowa"  description="" />
+
+		<siteMapNode url="~/Przegladanie_danych2/przegladaj_rezydent.aspx" title="przeglądaj rezydent"  description="" />
+		<siteMapNode url="~/Przegladanie_danych2/przegladaj_sprzedawca.aspx" title="przeglądaj sprzedawca"  description="" />
+		<siteMapNode url="~/Przegladanie_danych2/przegladaj_uczestnik.aspx" title="przeglądaj uczestnik"  description="" />
+		<siteMapNode url="~/Przegladanie_danych2/przegladaj_umowa.aspx" title="przeglądaj umowa"  description="" />
+		<siteMapNode url="~/Przegladanie_danych2/przegladaj_zaliczka.aspx" title="przeglądaj zaliczka"  description="" />
+		</siteMapNode>
+
+		<siteMapNode url="~/Wprowadzanie_danych/dodaj_uczestnik.aspx" title="wprowadz uczestnik"  description="" >
+		<siteMapNode url="~/Wprowadzanie_danych/dodaj_sprzedawca.aspx" title="wprowadz sprzedawca"  description="" />
+		<siteMapNode url="~/Wprowadzanie_danych/dodaj_rezydent.aspx" title="wprowadz rezydent"  description="" />
+		<siteMapNode url="~/Wprowadzanie_danych/dodaj_hotel.aspx" title="wprowadz hotel"  description="" />
+		<siteMapNode url="~/Wprowadzanie_danych/dodaj_atrakcja_dodatkowa.aspx" title="wprowadz atrakcja dodatkowa"  description="" />
+		<siteMapNode url="~/Wprowadzanie_danych/dodaj_umowa.aspx" title="wprowadz umowa"  description="" />
+		<siteMapNode url="~/Wprowadzanie_danych/dodaj_zaliczka.aspx" title="wprowadz zaliczka"  description="" />
+		<siteMapNode url="~/Wprowadzanie_danych/dodaj_wycieczka.aspx" title="wprowadz wycieczka"  description="" />
+		</siteMapNode>
+
+		<siteMapNode url="~/Modyfikowanie_danych/edytuj_uczestnik.aspx" title="edytuj uczestnik"  description="" >
+		<siteMapNode url="~/Modyfikowanie_danych/edytuj_sprzedawca.aspx" title="edytuj sprzedawca"  description="" />
+		<siteMapNode url="~/Modyfikowanie_danych/edytuj_rezydent.aspx" title="edytuj rezydent"  description="" />
+		<siteMapNode url="~/Modyfikowanie_danych/edytuj_hotel.aspx" title="edytuj hotel"  description="" />
+		<siteMapNode url="~/Modyfikowanie_danych/edytuj_atrakcja_dodatkowa.aspx" title="edytuj atrakcja dodatkowa"  description="" />
+		<siteMapNode url="~/Modyfikowanie_danych/edytuj_umowa.aspx" title="edytuj umowa"  description="" />
+		<siteMapNode url="~/Modyfikowanie_danych/edytuj_zaliczka.aspx" title="edytuj zaliczka"  description="" />
+		<siteMapNode url="~/Modyfikowanie_danych/edytuj_wycieczka.aspx " title="edytuj wycieczka"  description="" />
+		</siteMapNode>
+	
+		
+
+	</siteMapNode>
+</siteMap>
+

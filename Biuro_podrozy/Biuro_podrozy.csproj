@@ -1,0 +1,423 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82857FC0-DB0C-415C-9B20-BE275EA49A96}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Biuro_podrozy</RootNamespace>
+    <AssemblyName>Biuro_podrozy</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44352</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="108685488_288093125767885_3016259546286328589_n.jpg" />
+    <Content Include="App_Data\Wycieczka_praca.mdf" />
+    <Content Include="App_Data\Wycieczka_praca_log.ldf">
+      <DependentUpon>Wycieczka_praca.mdf</DependentUpon>
+    </Content>
+    <Content Include="Content\themes\base\accordion.css" />
+    <Content Include="Content\themes\base\all.css" />
+    <Content Include="Content\themes\base\autocomplete.css" />
+    <Content Include="Content\themes\base\base.css" />
+    <Content Include="Content\themes\base\button.css" />
+    <Content Include="Content\themes\base\core.css" />
+    <Content Include="Content\themes\base\datepicker.css" />
+    <Content Include="Content\themes\base\dialog.css" />
+    <Content Include="Content\themes\base\draggable.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_444444_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777620_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777777_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\menu.css" />
+    <Content Include="Content\themes\base\progressbar.css" />
+    <Content Include="Content\themes\base\resizable.css" />
+    <Content Include="Content\themes\base\selectable.css" />
+    <Content Include="Content\themes\base\selectmenu.css" />
+    <Content Include="Content\themes\base\slider.css" />
+    <Content Include="Content\themes\base\sortable.css" />
+    <Content Include="Content\themes\base\spinner.css" />
+    <Content Include="Content\themes\base\tabs.css" />
+    <Content Include="Content\themes\base\theme.css" />
+    <Content Include="Content\themes\base\tooltip.css" />
+    <Content Include="Logowanie\logowanie.aspx" />
+    <Content Include="Logowanie\przypomnienie_hasla.aspx" />
+    <Content Include="Logowanie\rejestracja_uzytkownika.aspx" />
+    <Content Include="Logowanie\zmiana_hasla.aspx" />
+    <Content Include="Modyfikowanie_danych\edytuj_hotel.aspx" />
+    <Content Include="Modyfikowanie_danych\edytuj_atrakcja_dodatkowa.aspx" />
+    <Content Include="Modyfikowanie_danych\edytuj_rezydent.aspx" />
+    <Content Include="Modyfikowanie_danych\edytuj_sprzedawca.aspx" />
+    <Content Include="Modyfikowanie_danych\edytuj_uczestnik.aspx">
+      <BrowseToURL>c</BrowseToURL>
+    </Content>
+    <Content Include="Modyfikowanie_danych\edytuj_umowa.aspx" />
+    <Content Include="Modyfikowanie_danych\edytuj_wycieczka.aspx" />
+    <Content Include="Modyfikowanie_danych\edytuj_zaliczka.aspx" />
+    <Content Include="Przegladanie_danych1\przegladaj_atrakcja_dodatkowa.aspx" />
+    <Content Include="Przegladanie_danych1\przegladaj_hotel.aspx" />
+    <Content Include="Przegladanie_danych1\przegladaj_wycieczka.aspx" />
+    <Content Include="Przegladanie_danych2\przegladaj_rezydent.aspx" />
+    <Content Include="Przegladanie_danych2\przegladaj_sprzedawca.aspx" />
+    <Content Include="Przegladanie_danych2\przegladaj_uczestnik.aspx" />
+    <Content Include="Przegladanie_danych2\przegladaj_umowa.aspx" />
+    <Content Include="Przegladanie_danych2\przegladaj_zaliczka.aspx" />
+    <None Include="Scripts\jquery-3.5.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.5.1.js" />
+    <Content Include="Scripts\jquery-3.5.1.min.js" />
+    <Content Include="Scripts\jquery-3.5.1.slim.js" />
+    <Content Include="Scripts\jquery-3.5.1.slim.min.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
+    <Content Include="Strona_glowna.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Wprowadzanie_danych\dodaj_atrakcja_dodatkowa.aspx" />
+    <Content Include="Wprowadzanie_danych\dodaj_hotel.aspx" />
+    <Content Include="Wprowadzanie_danych\dodaj_rezydent.aspx" />
+    <Content Include="Wprowadzanie_danych\dodaj_sprzedawca.aspx" />
+    <Content Include="Wprowadzanie_danych\dodaj_uczestnik.aspx" />
+    <Content Include="Wprowadzanie_danych\dodaj_umowa.aspx" />
+    <Content Include="Wprowadzanie_danych\dodaj_wycieczka.aspx" />
+    <Content Include="Wprowadzanie_danych\dodaj_zaliczka.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Logowanie\logowanie.aspx.cs">
+      <DependentUpon>logowanie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logowanie\logowanie.aspx.designer.cs">
+      <DependentUpon>logowanie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logowanie\przypomnienie_hasla.aspx.cs">
+      <DependentUpon>przypomnienie_hasla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logowanie\przypomnienie_hasla.aspx.designer.cs">
+      <DependentUpon>przypomnienie_hasla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logowanie\rejestracja_uzytkownika.aspx.cs">
+      <DependentUpon>rejestracja_uzytkownika.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logowanie\rejestracja_uzytkownika.aspx.designer.cs">
+      <DependentUpon>rejestracja_uzytkownika.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logowanie\zmiana_hasla.aspx.cs">
+      <DependentUpon>zmiana_hasla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logowanie\zmiana_hasla.aspx.designer.cs">
+      <DependentUpon>zmiana_hasla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modyfikowanie_danych\edytuj_hotel.aspx.cs">
+      <DependentUpon>edytuj_hotel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modyfikowanie_danych\edytuj_hotel.aspx.designer.cs">
+      <DependentUpon>edytuj_hotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modyfikowanie_danych\edytuj_atrakcja_dodatkowa.aspx.cs">
+      <DependentUpon>edytuj_atrakcja_dodatkowa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modyfikowanie_danych\edytuj_atrakcja_dodatkowa.aspx.designer.cs">
+      <DependentUpon>edytuj_atrakcja_dodatkowa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modyfikowanie_danych\edytuj_rezydent.aspx.cs">
+      <DependentUpon>edytuj_rezydent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modyfikowanie_danych\edytuj_rezydent.aspx.designer.cs">
+      <DependentUpon>edytuj_rezydent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modyfikowanie_danych\edytuj_sprzedawca.aspx.cs">
+      <DependentUpon>edytuj_sprzedawca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modyfikowanie_danych\edytuj_sprzedawca.aspx.designer.cs">
+      <DependentUpon>edytuj_sprzedawca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modyfikowanie_danych\edytuj_uczestnik.aspx.cs">
+      <DependentUpon>edytuj_uczestnik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modyfikowanie_danych\edytuj_uczestnik.aspx.designer.cs">
+      <DependentUpon>edytuj_uczestnik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modyfikowanie_danych\edytuj_umowa.aspx.cs">
+      <DependentUpon>edytuj_umowa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modyfikowanie_danych\edytuj_umowa.aspx.designer.cs">
+      <DependentUpon>edytuj_umowa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modyfikowanie_danych\edytuj_wycieczka.aspx.cs">
+      <DependentUpon>edytuj_wycieczka.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modyfikowanie_danych\edytuj_wycieczka.aspx.designer.cs">
+      <DependentUpon>edytuj_wycieczka.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modyfikowanie_danych\edytuj_zaliczka.aspx.cs">
+      <DependentUpon>edytuj_zaliczka.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modyfikowanie_danych\edytuj_zaliczka.aspx.designer.cs">
+      <DependentUpon>edytuj_zaliczka.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Przegladanie_danych1\przegladaj_atrakcja_dodatkowa.aspx.cs">
+      <DependentUpon>przegladaj_atrakcja_dodatkowa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Przegladanie_danych1\przegladaj_atrakcja_dodatkowa.aspx.designer.cs">
+      <DependentUpon>przegladaj_atrakcja_dodatkowa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Przegladanie_danych1\przegladaj_hotel.aspx.cs">
+      <DependentUpon>przegladaj_hotel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Przegladanie_danych1\przegladaj_hotel.aspx.designer.cs">
+      <DependentUpon>przegladaj_hotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Przegladanie_danych1\przegladaj_wycieczka.aspx.cs">
+      <DependentUpon>przegladaj_wycieczka.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Przegladanie_danych1\przegladaj_wycieczka.aspx.designer.cs">
+      <DependentUpon>przegladaj_wycieczka.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Przegladanie_danych2\przegladaj_rezydent.aspx.cs">
+      <DependentUpon>przegladaj_rezydent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Przegladanie_danych2\przegladaj_rezydent.aspx.designer.cs">
+      <DependentUpon>przegladaj_rezydent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Przegladanie_danych2\przegladaj_sprzedawca.aspx.cs">
+      <DependentUpon>przegladaj_sprzedawca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Przegladanie_danych2\przegladaj_sprzedawca.aspx.designer.cs">
+      <DependentUpon>przegladaj_sprzedawca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Przegladanie_danych2\przegladaj_uczestnik.aspx.cs">
+      <DependentUpon>przegladaj_uczestnik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Przegladanie_danych2\przegladaj_uczestnik.aspx.designer.cs">
+      <DependentUpon>przegladaj_uczestnik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Przegladanie_danych2\przegladaj_umowa.aspx.cs">
+      <DependentUpon>przegladaj_umowa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Przegladanie_danych2\przegladaj_umowa.aspx.designer.cs">
+      <DependentUpon>przegladaj_umowa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Przegladanie_danych2\przegladaj_zaliczka.aspx.cs">
+      <DependentUpon>przegladaj_zaliczka.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Przegladanie_danych2\przegladaj_zaliczka.aspx.designer.cs">
+      <DependentUpon>przegladaj_zaliczka.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Strona_glowna.aspx.cs">
+      <DependentUpon>Strona_glowna.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Strona_glowna.aspx.designer.cs">
+      <DependentUpon>Strona_glowna.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="strona_wzorcowa.Master.cs">
+      <DependentUpon>strona_wzorcowa.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="strona_wzorcowa.Master.designer.cs">
+      <DependentUpon>strona_wzorcowa.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Wprowadzanie_danych\dodaj_atrakcja_dodatkowa.aspx.cs">
+      <DependentUpon>dodaj_atrakcja_dodatkowa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wprowadzanie_danych\dodaj_atrakcja_dodatkowa.aspx.designer.cs">
+      <DependentUpon>dodaj_atrakcja_dodatkowa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wprowadzanie_danych\dodaj_hotel.aspx.cs">
+      <DependentUpon>dodaj_hotel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wprowadzanie_danych\dodaj_hotel.aspx.designer.cs">
+      <DependentUpon>dodaj_hotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wprowadzanie_danych\dodaj_rezydent.aspx.cs">
+      <DependentUpon>dodaj_rezydent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wprowadzanie_danych\dodaj_rezydent.aspx.designer.cs">
+      <DependentUpon>dodaj_rezydent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wprowadzanie_danych\dodaj_sprzedawca.aspx.cs">
+      <DependentUpon>dodaj_sprzedawca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wprowadzanie_danych\dodaj_sprzedawca.aspx.designer.cs">
+      <DependentUpon>dodaj_sprzedawca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wprowadzanie_danych\dodaj_uczestnik.aspx.cs">
+      <DependentUpon>dodaj_uczestnik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wprowadzanie_danych\dodaj_uczestnik.aspx.designer.cs">
+      <DependentUpon>dodaj_uczestnik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wprowadzanie_danych\dodaj_umowa.aspx.cs">
+      <DependentUpon>dodaj_umowa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wprowadzanie_danych\dodaj_umowa.aspx.designer.cs">
+      <DependentUpon>dodaj_umowa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wprowadzanie_danych\dodaj_wycieczka.aspx.cs">
+      <DependentUpon>dodaj_wycieczka.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wprowadzanie_danych\dodaj_wycieczka.aspx.designer.cs">
+      <DependentUpon>dodaj_wycieczka.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wprowadzanie_danych\dodaj_zaliczka.aspx.cs">
+      <DependentUpon>dodaj_zaliczka.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wprowadzanie_danych\dodaj_zaliczka.aspx.designer.cs">
+      <DependentUpon>dodaj_zaliczka.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="strona_wzorcowa.Master" />
+    <Content Include="Scripts\jquery-3.5.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.5.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51987</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44352/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ten projekt zawiera odwołania do pakietów NuGet, których nie ma na tym komputerze. Użyj przywracania pakietów NuGet, aby je pobrać. Aby uzyskać więcej informacji, zobacz http://go.microsoft.com/fwlink/?LinkID=322105. Brakujący plik: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
